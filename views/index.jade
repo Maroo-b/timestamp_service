@@ -1,5 +1,14 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 API Basejump: Timestamp microservice
+  p Convert unix timestamp to natural language date and vice versa.
+
+  h2 Example usage:
+  .code
+    /December%2015,%202015
+  .code
+    /1450137600
+  h2 Example output:
+  .code
+    { "unix": 1450137600, "natural": "December 15, 2015"  }
